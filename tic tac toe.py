@@ -407,7 +407,6 @@ while running:
                 click_sound = mixer.Sound('mouse-click.wav')
                 click_sound.play()
                 x, y = pygame.mouse.get_pos()
-                print(count)
                 count = place_checker_for_x(count, x, y)
                 if count < 5:
                     cont, symbol = winner()
